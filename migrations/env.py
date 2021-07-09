@@ -1,6 +1,7 @@
 from __future__ import with_statement
 
 import logging
+from logging import config
 from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config
