@@ -15,3 +15,8 @@ class SignUpForm(FlaskForm):
     password = PasswordField("Password", validators=[DataRequired()])
     email = StringField("Email", validators=[DataRequired()])
     submit = SubmitField("Sign In")
+
+class NoteForm(FlaskForm):
+    title = StringField("Titulo", validators=[DataRequired()])
+    body = StringField("Cuerpo", validators=[DataRequired()])
+    submit = SubmitField("Crear")
