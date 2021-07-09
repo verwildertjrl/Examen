@@ -1,2 +1,2 @@
-FLASK_APP=notas.py
+FLASK_APP=articulos.py
 FLASK_DEBUG=1

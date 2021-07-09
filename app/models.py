@@ -36,3 +36,9 @@ class Post(db.Model):
 
     def __repr__(self):
         return "<Post {}>".format(self.body)
+
+class datos(db.Model):
+    __tablename__="Articulos"
+    SKU = db.Column(db.Integer,primary_key=True)
+    Nombre = db.Column(db.String(1020))
+    Precio = db.Column(db.Integer, index=True)

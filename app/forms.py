@@ -20,3 +20,8 @@ class NoteForm(FlaskForm):
     title = StringField("Titulo", validators=[DataRequired()])
     body = StringField("Cuerpo", validators=[DataRequired()])
     submit = SubmitField("Crear")
+
+class DatosForm(FlaskForm):
+    SKU = StringField("SKU", validators=[DataRequired()])
+    Nombre = StringField("Nombre", validators=[DataRequired()])
+    Precio = StringField("Precio", validators=[DataRequired()])

@@ -2,13 +2,13 @@
 
 {% block content %}
     <h1>{{ current_user.username }}</h1>
-    <a class="btn btn-primary" href="{{url_for('create_notes')}}">Crear Nota</a>
+    <a class="btn btn-primary" href="{{url_for('eliminar_articulos')}}">Borrar</a>
     <table class="table">
         <thead>
         <tr>
-            <th scope="col">Titulo</th>
-            <th scope="col">Compartir</th>
-            <th scope="col">Eliminar</th>
+            <th scope="col">SKU</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
         </tr>
         </thead>
         <tbody>
