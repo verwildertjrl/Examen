@@ -28,6 +28,7 @@ def login():
         flash("Iniciaste Sesión correctamente, Hola {}".format(form.username.data))
         return redirect("/index")
     return render_template("login.html", title="Login",form=form)
+    return redirect ("/articulos")
 
 
 @app.route("/signup", methods=["GET", "POST"])
